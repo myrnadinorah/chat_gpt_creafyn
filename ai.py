@@ -7,7 +7,7 @@ import openai
 
 st.set_page_config(page_title="Análisis Económico", layout="centered")
 
-st.title("Análisis Económico Personalizado")
+st.title("Análisis Económico")
 
 engine = create_engine(st.secrets["mysql_connection"])
 query = "SELECT rfc, name FROM clients"

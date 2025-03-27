@@ -9,7 +9,7 @@ st.set_page_config(page_title="Análisis Económico", layout="centered")
 
 st.title("Análisis Económico Personalizado")
 
-engine = create_engine('mysql+pymysql://satws_extractor:LppgQWI22Txqzl1@db-cluster-momento-capital-prod.cluster-c7b6x1wx8cfw.us-east-1.rds.amazonaws.com/momento_capital')
+engine = create_engine(st.secrets["mysql_connection"])
 query = "SELECT rfc, name FROM clients"
 dclients = pd.read_sql(query, engine)
 engine.dispose()

@@ -1,6 +1,7 @@
 streamlit
 pandas
 boto3
-io
-sqlalchemy 
 openai
+sqlalchemy
+pymysql
+openpyxl

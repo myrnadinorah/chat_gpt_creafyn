@@ -78,3 +78,7 @@ if client_chosen:
 
         st.subheader("Análisis Económico:")
         st.markdown(response.choices[0].message.content)
+aws_access_key = st.secrets["aws_access_key"]
+aws_secret_key = st.secrets["aws_secret_key"]
+openai_api_key = st.secrets["openai_api_key"]
+client = openai.OpenAI(api_key=openai_api_key)

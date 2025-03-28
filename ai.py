@@ -70,7 +70,7 @@ Para este análisis considera el año 2025, febrero 2025
 
 client = openai.OpenAI(api_key=openai_api_key)
 response = client.chat.completions.create(
-    model="gpt-4",
+    model="gpt-4o",
     messages=[
         {"role": "system", "content": "Eres un economista experto en análisis macroeconómico y riesgos financieros."},
         {"role": "user", "content": prompt}
@@ -195,7 +195,7 @@ Para este análisis considera el año 2025, febrero 2025
 
 
 response2 = client.chat.completions.create(
-    model="gpt-4",
+    model="gpt-4o",
     messages=[
         {"role": "system", "content": "Eres un experto en economía y geopolítica."},
         {"role": "user", "content": prompt2}

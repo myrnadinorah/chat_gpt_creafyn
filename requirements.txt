@@ -5,3 +5,5 @@ openai
 sqlalchemy
 pymysql
 openpyxl
+datetime
+tabulate
